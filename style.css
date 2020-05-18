@@ -1,0 +1,80 @@
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(130, 131, 219) , rgb(223, 96, 149));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Loading Section */
+.loading{
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    border-top: 10px solid #14944a;
+    position: relative;
+    animation: anim1 2s linear infinite;
+}
+
+.loading::before, .loading::after{
+    content: '';
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+}
+
+/* Using Pseudo Elements */
+.loading::before{
+    border-top: 10px solid #131194;
+    transform: rotate(120deg);
+}
+
+.loading::after{
+    border-top: 10px solid #992b18;
+    transform: rotate(240deg);
+}
+
+.loading span{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 140px;
+    animation: anim2 2s linear infinite;
+}
+
+/* Animation */
+@keyframes anim1{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim2{
+    to{
+        transform: rotate(-360deg);
+    }
+
+    0%{
+        color: #14944a;
+    }
+    
+    50%{
+        color: #131194;
+    }
+
+    100%{
+        color: #992b18;
+    }
+}
