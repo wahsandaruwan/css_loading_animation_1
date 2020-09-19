@@ -1,11 +1,13 @@
-This is an amazing loading animation in CSS.
+## This is an amazing loading animation in CSS.
 
-Technologies Used :
+#### Technologies Used :
 
-HTML5
+* HTML5
 
-CSS3
+* CSS3
 
 ==============================================
 
-You can commit to this project
+### License : MIT
+
+### You are welcome to update this source code if it contain any miss mathces.
